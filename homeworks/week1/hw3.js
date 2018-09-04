@@ -3,5 +3,5 @@ function reverse(str) {
     for(i=0;i<str.length;i++){
       revStr+=str[str.length-i-1]
     }
-    return(revStr)
+    return revStr
 }

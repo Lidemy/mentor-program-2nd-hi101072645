@@ -5,5 +5,5 @@ function printFactor(n) {
         factors += i.toString() +"\n"
       }
     }
-    return(factors)
+    return factors
 }

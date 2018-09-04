@@ -3,7 +3,7 @@ function join(str, concatStr) {
     for(i=1;i<str.length;i++){
         joinStr+=concatStr+str[i]
     }
-    return(joinStr)
+    return joinStr
 }
 
 function repeat(str, times) {
@@ -11,5 +11,5 @@ function repeat(str, times) {
     for(i=0;i<times;i++){
         repStr += str
     }
-    return(repStr)
+    return repStr
 }
