@@ -4,3 +4,4 @@ node_modules/
 *.jade
 *.scss
 *.sass
+prepros-6.config
