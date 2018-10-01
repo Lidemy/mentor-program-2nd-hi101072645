@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hw4</title>
+    <style></style>
+</head>
+<body>
+    <div class="box"> 
+        <h1>Hello World!</h1>
+        <h2>No not ME!</h2>
+
+    </div>
+</body>
+<script>
+    function selector(str){
+        document.querySelector(str)
+        return {
+            hide: function () {
+                document.querySelector(str).style.display = 'none'
+            },
+            show: function () {
+                document.querySelector(str).style.display = 'block'
+            }
+        }
+    }
+   
+    var $ = selector
+    var a = false
+    window.addEventListener('click',function () {   
+        if(!a){
+            $('.box h1').hide()
+            a = true
+        }else{
+            $('.box h1').show()
+            a = false
+        }
+    },false)
+
+
+</script>
+</html>

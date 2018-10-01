@@ -34,9 +34,16 @@ body {
     line-height: 24px; }
 
 .must-alert {
+  display: inline-block;
   color: red;
   margin-top: 10px;
   font-size: 12px; }
+
+.must-mark {
+  color: red; }
+
+.hide {
+  display: none; }
 
 .question {
   margin-left: -10px;
@@ -50,6 +57,7 @@ body {
   .question input {
     background: transparent; }
   .question input[type="text"], .question input[type="textarea"] {
+    display: block;
     width: 70%;
     padding: 5px 0px;
     margin-top: 10px;
@@ -64,6 +72,8 @@ body {
   .question label {
     font-size: 12px;
     padding-left: 5px; }
+  .question input[type="radio"], .question label {
+    margin-top: 15px; }
   .question input[type="textarea"] {
     width: 70%; }
 
