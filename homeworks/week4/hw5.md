@@ -34,7 +34,7 @@ Javascript Object Notation 從 javascript 物件發展出來的資料格式，�
 參考資料： [JSON 精要讀書會](http://miniaspreading.github.io/guide-to-json/index.html)
 
 7. JSONP 是什麼？  
-在 javascript 為了保護資料安全的同網域傳輸限制下，JSONP (JSON with Padding) 就是為了解決跨網域需求的方法之一，使用 script 的 src 屬性，呼叫可執行的 JavaScript，藉由 XMLHttpRequest 動態產生資料來取得。
+在 javascript 為了保護資料安全的同網域傳輸限制下，JSONP (JSON with Padding) 就是為了解決跨網域需求的方法之一，使用 script 的 src 屬性，呼叫能從 URL 取得 JSON 資料的 javascript 函式，透過這個函式動態產生的內容取得需要的資料。
 
 8. 要如何存取跨網域的 API？
     1.透過連接埠轉接：利用遠端主機作跳板來連線。
