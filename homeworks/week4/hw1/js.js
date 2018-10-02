@@ -23,6 +23,7 @@ calculator.addEventListener('click',function pressNumber(e){
         }else if(e.target.innerText=="+"||e.target.innerText=="-"||e.target.innerText=="÷"||e.target.innerText=="×"){
             memory[0] = screen.innerText
             memory[1] = e.target.innerText
+            calculating = true
         }else if(e.target.innerText=="="){
             memory[2] = screen.innerText
             switch(memory[1]){
