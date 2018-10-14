@@ -1,0 +1,49 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="-">作業</h1>
+<h2 id="hw1-css-">hw1：CSS 預處理器</h2>
+<p>自從學會 CSS 預處理器之後，寫 CSS 的複雜度一下子降低了很多，一方面是巢狀 CSS 可以很簡單的實作出來，另一方面是多了變數這個好用的東西。</p>
+<p>現在請你把以前寫的 CSS 都用你自己挑的 CSS preprocessor（LESS, SASS, Stylus）來改寫，並且串上 PostCSS 讓它自動幫你加上 prefix。</p>
+<h2 id="hw2-stack-queue">hw2：實作出 Stack 與 Queue</h2>
+<p>請你實作出<code>Stack</code>跟<code>Queue</code>兩個 Function，讓以下程式碼可以順利執行：
+（禁止使用內建函式<code>push</code>與<code>pop</code>）</p>
+<pre><code class="lang-js">var stack = new Stack()
+stack.push(10)
+stack.push(5)
+console.log(stack.pop()) // 5
+console.log(stack.pop()) // 10
+
+var queue = new Queue()
+queue.push(1)
+queue.push(2)
+console.log(queue.pop()) // 1
+console.log(queue.pop()) // 2
+</code></pre>
+<h2 id="hw3-event-loop">hw3：Event Loop</h2>
+<p>在 JavaScript 裡面，一個很重要的概念就是 Event Loop，是 JavaScript 底層在執行程式碼時的運作方式。請你說明以下程式碼會輸出什麼，以及盡可能詳細的解釋原因。</p>
+<pre><code class="lang-js">console.log(1)
+setTimeout(() =&gt; {
+  console.log(2)
+}, 0)
+console.log(3)
+setTimeout(() =&gt; {
+  console.log(4)
+}, 0)
+console.log(5)
+</code></pre>
+<h2 id="hw4-http-cache">hw4：HTTP Cache</h2>
+<p>請閱讀這篇文章：<a href="https://blog.techbridge.cc/2017/06/17/cache-introduction/">循序漸進理解 HTTP Cache 機制</a>來理解 HTTP Cache 機制。</p>
+<h2 id="hw5-">hw5：簡答題</h2>
+<ol>
+<li>CSS 預處理器是什麼？我們可以不用它嗎？</li>
+<li>請舉出任何一個跟 HTTP Cache 有關的 Header 並說明其作用。</li>
+<li>Stack 跟 Queue 的差別是什麼？</li>
+<li>請去查詢資料並解釋 CSS Selector 的權重是如何計算的（不要複製貼上，請自己思考過一遍再自己寫出來，沒有很完整也行）</li>
+</ol>
+
+      </body>
+    </html>
