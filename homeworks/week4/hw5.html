@@ -1,0 +1,50 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>hw5.md</title>
+      </head>
+      <body>
+        <h1 id="-">作業</h1>
+<h2 id="hw5-">hw5：簡答題</h2>
+<ol>
+<li><p>什麼是 DOM？
+Document Object Model，由瀏覽器提供讓程式語言能控制 html 的方式，在瀏覽器拿到 html 檔案時，將 html 文件架構為樹狀，再將每個 tag 看成節點對應，使 javascript 可以控制網頁中的元素。</p>
+</li>
+<li><p>什麼是 Ajax？<br>Asynchronous JavaScript and XML，非同步的 javascript 和 XML，透過 API 向 server 發出 request 來取得資料，可以在不必刷新整個頁面的情況下更新資料，不用花力氣處理沒有更動的資料，加快運行速度。  </p>
+</li>
+<li><p>HTTP method 有哪幾個？有什麼不一樣？<br> 1.GET  取得想要的資料，大部分用這個
+ 2.HEAD 和GET一樣，但只取 http header 的資料
+ 3.POST 提交資料，大部分用這個
+ 4.PUT 修改指定資料
+ 5.DELETE 刪除指定資料
+ 6.TRACE 與資源標明的伺服器進行 loop-back test
+ 7.OPTIONS 描述指定資源的溝通方法
+ 8.CONNECT 請求建立雙向連通的管道
+ 9.PATCH 套用指定資源的部分修改</p>
+</li>
+<li><p><code>GET</code> 跟 <code>POST</code> 有哪些區別，可以試著舉幾個例子嗎？   </p>
+<ul>
+<li>GET
+取得指定資料的時候用，只包含 head 不包含 body，將要傳遞的內容以 Query String 的方式在加 URL 後傳遞資料，所以像是密碼等有私密性的資料就不適合透過這個方式傳遞。</li>
+<li>POST
+提交資料的時候用，傳遞時網址列只會顯示指定的 URL，因為 POST 包含 body 所以可以把資料存放在 body 中，私人資料用這個方法比較有保障一點，</li>
+</ul>
+</li>
+<li><p>什麼是 RESTful API？<br>Representational State Transfer 讓 API 更簡潔易懂的設計風格，使用了 HTTP 的 CRUD protocol (GET/POST/PUT/DELETE)，讓 URL 的可讀性更高，最常使用的是 JSON 格式的資料。</p>
+</li>
+<li><p>JSON 是什麼<br>Javascript Object Notation 從 javascript 物件發展出來的資料格式，並不是程式語言，表示為「名稱:值」，值可以是 number、boolean、null、array 或 object。
+「名稱:值對」中不同的是值並不一定需要引號，但若是字串則需用雙引號，也就是物件 key 的地方在 JSON 時若是字串要用引號。
+參考資料： <a href="http://miniaspreading.github.io/guide-to-json/index.html">JSON 精要讀書會</a></p>
+</li>
+<li><p>JSONP 是什麼？<br>在 javascript 為了保護資料安全的同網域傳輸限制下，JSONP (JSON with Padding) 就是為了解決跨網域需求的方法之一，使用 script 的 src 屬性，呼叫可執行的 JavaScript，藉由 XMLHttpRequest 動態產生資料來取得。</p>
+</li>
+<li><p>要如何存取跨網域的 API？
+ 1.透過連接埠轉接：利用遠端主機作跳板來連線。
+ 2.反向代理伺服器：透過反向代理伺服器向伺服器取得資料，使用者只能知道反向代理伺服器。
+ 3.JSONP
+ 4.CORS：透過傳送特定 HTTP head 來驗證可存取資料的使用者。</p>
+</li>
+</ol>
+
+      </body>
+    </html>
