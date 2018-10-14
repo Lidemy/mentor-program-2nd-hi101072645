@@ -5,3 +5,4 @@ node_modules/
 *.scss
 *.sass
 prepros-6.config
+__connect.php

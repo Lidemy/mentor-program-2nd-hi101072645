@@ -1,0 +1,181 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: '微軟正黑體';
+  letter-spacing: 1px; }
+
+.wrapper {
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 15px;
+  text-align: center; }
+
+.login-info {
+  text-align: center; }
+  .login-info span {
+    font-size: 30px;
+    font-weight: bold; }
+
+.login-info span {
+  font-size: 30px;
+  font-weight: bold; }
+
+.info-board {
+  width: 320px;
+  height: 300px;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 1px 1px 2px 0px #666;
+  box-shadow: 1px 1px 2px 0px #666; }
+
+hr {
+  opacity: .5; }
+
+.login {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid #d2d2d2;
+  padding: 15px; }
+  .login input[type="text"] {
+    margin-bottom: 15px; }
+  .login #login {
+    text-align-last: left; }
+
+.system-info {
+  text-align: center; }
+
+.new-post {
+  text-align-last: left;
+  border: 1px solid #d2d2d2;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .new-post .new-user {
+    width: 100%; }
+    .new-post .new-user span {
+      line-height: 2em;
+      letter-spacing: 2px;
+      vertical-align: middle; }
+    .new-post .new-user img {
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: 15px; }
+  .new-post .new-content {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px; }
+    .new-post .new-content span {
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 5px; }
+    .new-post .new-content textarea {
+      width: 550px;
+      height: 150px;
+      border: 1px solid #d2d2d2;
+      resize: vertical; }
+  .new-post:active {
+    background-color: #f2f2f2; }
+
+input[type="text"], input[type="password"] {
+  width: 40%;
+  padding: 8px;
+  border-width: 0px;
+  margin-bottom: 15px;
+  border: 1px solid #d2d2d2; }
+
+input, textarea {
+  background-color: transparent;
+  border: 1px solid #d2d2d2;
+  resize: vertical;
+  padding: 10px; }
+
+input:focus, textarea:focus {
+  outline: 0; }
+
+input[type="submit"] {
+  border: 1px solid #fff;
+  background-color: #76F6A3;
+  cursor: pointer;
+  color: #333;
+  padding: 10px 15px;
+  margin: 10px 0px 10px 0;
+  font-size: 16px;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+
+input[type="submit"]:hover {
+  padding: 10px 30px;
+  border-radius: 10px; }
+
+.message {
+  text-align-last: left;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 15px 30px 30px;
+  margin: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .message .main-message {
+    width: 100%;
+    margin-bottom: 10px; }
+  .message .sub-message {
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    background-color: #dedede;
+    margin-bottom: 10px; }
+    .message .sub-message .content {
+      background-color: #f2f2f2; }
+  .message .theme {
+    padding: 10px 0px; }
+  .message .user {
+    padding-bottom: 10px; }
+    .message .user img {
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: 15px; }
+  .message span.time {
+    display: block;
+    text-align: right;
+    color: #aaa; }
+  .message span.user-nickname {
+    color: #1da16e;
+    line-height: 2em;
+    letter-spacing: 2px;
+    vertical-align: middle; }
+    .message span.user-nickname:after {
+      content: ' 說：';
+      color: #666;
+      font-size: 15px; }
+  .message .content {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: justify; }
+  .message .reply-message {
+    background-color: #fff;
+    border-radius: 0px;
+    padding: 15px;
+    width: 80%;
+    outline: 1px solid #d2d2d2; }
+    .message .reply-message textarea {
+      width: 95%;
+      background-color: #fff; }
