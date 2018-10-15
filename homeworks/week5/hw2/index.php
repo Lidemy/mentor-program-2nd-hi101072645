@@ -1,6 +1,5 @@
 <?php
-require_once __DIR__. '/__connect.php';
-
+    require_once('__connect.php');
 ?>
 
 
