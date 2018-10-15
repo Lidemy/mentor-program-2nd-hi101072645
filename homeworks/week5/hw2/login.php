@@ -19,19 +19,17 @@
         </form>
 
 <?php
-    require_once __DIR__. '/__connect.php';
+    require_once('__connect.php');
     if(isset($_POST['account']) && isset($_POST['password'])){
     $Account = $_POST['account'];
     $password = $_POST['password'];
     $sql = "SELECT*FROM hi101072645_user WHERE account='$Account' AND password='$password'" ;
     $sql2 = $conn->query($sql);
     echo $conn->error;
-    if(mysqli_num_rows($sql2) == "")
-   
-    {
-       echo '帳號密碼錯誤喔！'
+    if(mysqli_num_rows($sql2) == ""){
+       echo '帳號密碼錯誤喔！';
     }
-   else
+    else
     {
         $row = $sql2->fetch_assoc();
         echo "<p class='system-info'>哈囉 " . $row['nickname'] . "，登入成功了，沒有到留言板的話請".'<a href="index.php">點我</a></p>';
