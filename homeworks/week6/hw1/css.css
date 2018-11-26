@@ -1,0 +1,237 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: '微軟正黑體';
+  letter-spacing: 1px; }
+
+.login-info {
+  text-align: center; }
+  .login-info span {
+    font-size: 30px;
+    font-weight: bold; }
+
+.login-info span {
+  font-size: 30px;
+  font-weight: bold; }
+
+.info-board {
+  width: 320px;
+  height: 300px;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 1px 1px 2px 0px #666;
+  box-shadow: 1px 1px 2px 0px #666; }
+
+hr {
+  opacity: .5; }
+
+.login {
+  margin-top: 50px;
+  border: 1px solid #d2d2d2;
+  padding: 15px; }
+  .login input[type="text"] {
+    margin-bottom: 15px; }
+  .login #login {
+    text-align-last: left; }
+
+.system-info {
+  text-align: center; }
+
+.new-post {
+  text-align-last: left;
+  border: 1px solid #d2d2d2;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .new-post .new-user {
+    width: 100%; }
+    .new-post .new-user span {
+      line-height: 2em;
+      letter-spacing: 2px;
+      vertical-align: middle; }
+    .new-post .new-user span:nth-child(1) {
+      font-size: 20px;
+      border-bottom: 1px solid #ccc; }
+      .new-post .new-user span:nth-child(1):before {
+        content: '請說，'; }
+  @media all and (max-width: 575.98px) {
+    .new-post {
+      padding: 30px 15px; } }
+  .new-post .new-content {
+    width: 100%;
+    padding-top: 10px; }
+    .new-post .new-content span {
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 5px; }
+    .new-post .new-content textarea {
+      height: 150px;
+      border: 1px solid #d2d2d2;
+      resize: vertical; }
+  .new-post:active {
+    background-color: #f2f2f2; }
+
+input[type="text"], input[type="password"] {
+  padding: 8px;
+  border-width: 0px;
+  border: 1px solid #d2d2d2; }
+
+input, textarea {
+  background-color: transparent;
+  border: 1px solid #d2d2d2;
+  resize: vertical; }
+
+input:focus, textarea:focus {
+  outline: 0; }
+
+input.submit-btn {
+  border: 1px solid #fff;
+  background-color: #76F6A3;
+  color: #17793a; }
+
+input.submit-btn:hover {
+  background-color: #70EA9B;
+  border: 1px solid #17793a;
+  color: #1c462b; }
+
+.edit_title {
+  margin-top: 30px; }
+
+.origin_comment {
+  background-color: #f2f2f2;
+  padding: 60px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  border-radius: 5px; }
+  .origin_comment .content {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px; }
+
+.message {
+  text-align-last: left;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  border-bottom: 5px solid #d2d2d2;
+  border-right: 3px solid #d2d2d2;
+  padding: 15px 30px 30px;
+  margin: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  @media all and (max-width: 575.98px) {
+    .message {
+      padding: 15px; } }
+  .message .main-message {
+    width: 100%;
+    margin-bottom: 10px; }
+  .message .edit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .message .edit button {
+      vertical-align: bottom;
+      text-align: right;
+      font-size: 12px;
+      margin-left: 10px; }
+  .message span.user-nickname {
+    color: #333;
+    line-height: 2em;
+    letter-spacing: 2px;
+    vertical-align: middle; }
+    .message span.user-nickname:after {
+      content: ' 說：';
+      color: #666;
+      font-size: 15px; }
+  .message .sub-message {
+    padding: 15px;
+    border-radius: 5px;
+    width: 80%;
+    border: 1px solid #dedede;
+    background-color: #dedede;
+    border-bottom: 3px solid #c2c2c2;
+    border-right: 3px solid #c2c2c2;
+    margin-bottom: 10px; }
+    @media all and (max-width: 575.98px) {
+      .message .sub-message {
+        width: 100%; } }
+    @media all and (min-width: 576px) and (max-width: 767.98px) {
+      .message .sub-message {
+        width: 100%; } }
+    .message .sub-message .content {
+      background-color: #f2f2f2; }
+  .message .floor_master {
+    border: 1px solid #d2d2d2;
+    background-color: #f1f1f2;
+    border-bottom: 3px solid #d2d2d2;
+    border-right: 3px solid #d2d2d2; }
+    .message .floor_master span.user-nickname {
+      color: #035c80; }
+      .message .floor_master span.user-nickname:after {
+        content: ' 樓主說：'; }
+    .message .floor_master .content {
+      background-color: #FFFFFF; }
+  .message .theme {
+    padding: 10px 0px; }
+  .message .user {
+    padding-bottom: 10px; }
+  .message span.time {
+    display: inline;
+    width: 100%;
+    text-align: right;
+    color: #aaa; }
+  .message input {
+    margin-left: 5px;
+    margin-right: 5px; }
+  .message .content {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-align: justify;
+    margin-bottom: 5px; }
+  .message .reply-message {
+    background-color: #fff;
+    border-radius: 0px;
+    padding: 15px;
+    width: 80%;
+    outline: 1px solid #d2d2d2; }
+    .message .reply-message textarea {
+      width: 95%;
+      background-color: #fff; }
+    @media all and (min-width: 576px) and (max-width: 767.98px) {
+      .message .reply-message {
+        width: 100%; } }
+    @media all and (max-width: 575.98px) {
+      .message .reply-message {
+        width: 100%; } }
+
+.footer {
+  margin-top: 40px;
+  background-color: #393939;
+  padding-top: 40px;
+  height: 120px;
+  color: #999;
+  text-align: center;
+  vertical-align: middle;
+  bottom: 0; }
